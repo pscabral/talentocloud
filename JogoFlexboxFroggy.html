@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main.container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        section.box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            flex: 1 0 200px; /* flex-grow flex-shrink flex-basis */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Layout com Flexbox</h1>
+    </header>
+    <main class="container">
+        <section class="box">Box 1</section>
+        <section class="box">Box 2</section>
+        <section class="box">Box 3</section>
+    </main>
+    <footer>
+        <p>Rodapé da página</p>
+    </footer>
+</body>
+</html>
